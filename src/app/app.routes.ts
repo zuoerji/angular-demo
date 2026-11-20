@@ -33,4 +33,9 @@ export const routes: Routes = [
     title: '管道 Pipes',
     loadComponent: () => import('./demo/06-demo/06-demo').then((m) => m.Demo6),
   },
+  {
+    path: 'demo7',
+    title: '指令',
+    loadComponent: () => import('./demo/07-demo/07-demo').then((m) => m.Demo7),
+  },
 ];
