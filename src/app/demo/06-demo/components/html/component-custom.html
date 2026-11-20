@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>管道 Pipes - 自定义 @Pipe</h1>
+  <div class="demo-box">
+    <!-- <div> 展示文本 - pipe1: {{ text() | pipe1 | pipe2 }}</div>
+    <div> 展示文本 - pipe2: {{ text() | pipe2 | pipe1 }}</div> -->
+
+    <div> 展示文本 - pipe1: {{ text1() | pipe1:20:'ok' }} - pure</div>
+    <div> 展示文本 - pipe2: {{ text2() | pipe2 }} - impure</div>
+    <div> 展示数字: {{ count() }}</div>
+    <div> 展示调用: {{ shot() }}</div>
+    <div> 展示对象: {{ user() | pipe3 }} - pure</div>
+    
+    <button class="primary margin5" (click)="add()" >count + 1</button>
+    <button class="primary margin5" (click)="changeText1()" >更改文字1</button>
+    <button class="primary margin5" (click)="changeText2()" >更改文字2</button>
+    <button class="primary margin5" (click)="changeObject()" >更改对象</button>
+  </div>
+</body>
+</html>

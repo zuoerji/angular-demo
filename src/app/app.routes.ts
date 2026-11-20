@@ -28,4 +28,9 @@ export const routes: Routes = [
     title: 'signal',
     loadComponent: () => import('./demo/05-demo/05-demo').then((m) => m.Demo5),
   },
+  {
+    path: 'demo6',
+    title: '管道 Pipes',
+    loadComponent: () => import('./demo/06-demo/06-demo').then((m) => m.Demo6),
+  },
 ];
