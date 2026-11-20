@@ -38,4 +38,9 @@ export const routes: Routes = [
     title: '指令',
     loadComponent: () => import('./demo/07-demo/07-demo').then((m) => m.Demo7),
   },
+  {
+    path: 'demo8',
+    title: '内容投影',
+    loadComponent: () => import('./demo/08-demo/08-demo').then((m) => m.Demo8),
+  },
 ];
