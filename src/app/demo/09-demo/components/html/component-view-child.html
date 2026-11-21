@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>视图/内容查询</h1>
+  <div class="demo-box">
+    <div #box class="box">box</div>
+    <ul>
+      @for(item of list(); track $index) {
+        <li #item class="item"> {{ item }} </li>
+      }
+    </ul>
+  </div>
+  <div class="demo-box">
+    <custom-box #customBox /> 
+    @for(item of list(); track $index) {
+      <custom-item #customItem />
+    }
+  </div>
+   
+</body>
+</html>

@@ -21,6 +21,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
         <a routerLink="/demo6" routerLinkActive="active">管道 Pipes</a>
         <a routerLink="/demo7" routerLinkActive="active">指令</a>
         <a routerLink="/demo8" routerLinkActive="active">内容投影</a>
+        <a routerLink="/demo9" routerLinkActive="active">视图/内容查询</a>
 
       </nav>
       <main class="main">
