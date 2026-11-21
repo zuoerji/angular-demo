@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>生命周期函数</h1>
+  <div class="demo-box">
+    @if (active()) {
+      <component-child [count]="count()" [name]="name()"></component-child>
+    } @else {
+      <p>子组件已经销毁</p>
+    }
+    
+    <button class="primary margin5" (click)="changeNameAndCount('name')">父组件改name</button>
+    <button class="primary margin5" (click)="changeNameAndCount('count')">父组件改count</button>
+    <button class="primary margin5" (click)="childDisplay(false)">销毁子组件</button>
+    <button class="primary margin5" (click)="childDisplay(true)">重构子组件</button>
+  </div>
+
+
+</body>
+</html>

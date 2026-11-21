@@ -48,4 +48,9 @@ export const routes: Routes = [
     title: '视图/内容查询',
     loadComponent: () => import('./demo/09-demo/09-demo').then((m) => m.Demo9),
   },
+  {
+    path: 'demo10',
+    title: '生命周期',
+    loadComponent: () => import('./demo/10-demo/10-demo').then((m) => m.Demo10),
+  },
 ];
